@@ -9,9 +9,12 @@ import numpy as np
 def circumference(radius):
 	circumference = (radius *2*np.pi)
 	return circumference
-
+def area(radius):
+	area = radius**radius*np.pi
+	return area 
 
 #%% Execute the code 
 radius = 0.5 
 print('the circumference of a circle with  radius {} = {}'.format(radius, circumference(radius)))
+print('the area of a circle with radius {} = {}'.format(radius,area(radius)))
 
